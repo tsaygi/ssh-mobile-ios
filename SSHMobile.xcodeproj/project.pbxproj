@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		008221BF83B4B22E48F98FFA /* TestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E7CDFEC16E856566074256 /* TestSupport.swift */; };
+		09B111F7C9CD21F01238E5E3 /* JSONStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A152FCD043DB4AD8D9350F7 /* JSONStore.swift */; };
+		0E04C8533A9995203535180C /* IdentitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19964AB8A6213C9A08FFDC /* IdentitiesView.swift */; };
+		139590BAD0DAF39F764E1AF6 /* Fixtures in Resources */ = {isa = PBXBuildFile; fileRef = 8AB0E29DECFD00C30993A0D9 /* Fixtures */; };
+		182D877533A2AB5FE43CF259 /* NIOSSH in Frameworks */ = {isa = PBXBuildFile; productRef = 53757370EA33814910DC133B /* NIOSSH */; };
+		1ABAB6A67780E2470A997917 /* IntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B9521B1ED8E439FC2889EE /* IntegrationTests.swift */; };
+		1B20023761F8F82449C1274B /* SessionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9C7F1BEDACCE899573EAA /* SessionsView.swift */; };
+		1E7D816F4EEAE817B181924F /* KnownHostsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E67A704D5A3489712DA14B7 /* KnownHostsStore.swift */; };
+		205BA3B7253F448770569A16 /* SSHSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693EFA9A712721D7945F9AAE /* SSHSession.swift */; };
+		2551204A48EE94EE3D18A953 /* HostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DA3F97EABE5CDD388D0E8F /* HostListView.swift */; };
+		2876121024F38D47EE308B04 /* KnownHostsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB9C5AEC33702CB5C79A0BD /* KnownHostsTests.swift */; };
+		29B74733C8818E274D001251 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0869383A0214DDFBEFBEBE8 /* SettingsView.swift */; };
+		2A07C47D8E4B81C036B59B44 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319E4C8F426155772BA015E9 /* Models.swift */; };
+		2A2EF5D760BBAD672B03F9C8 /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = 22AA1C0116086EF45A7AE40A /* SwiftTerm */; };
+		301702F26534629519BB1499 /* SFTPBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0C47B85F086868EA8AC953 /* SFTPBrowserView.swift */; };
+		36EB2A7D08E4EBB19D6E3707 /* Fingerprint+CryptoKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC21C2ADD739F6E067F5ADC /* Fingerprint+CryptoKit.swift */; };
+		3B69A3D0E7A2C12249A20D1D /* SSHMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C839539D466C8841CFCC88 /* SSHMobileApp.swift */; };
+		42D4F4B3023A6AC8A722B436 /* OpenSSHKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E455DECE4EE1B041690FFB04 /* OpenSSHKeyTests.swift */; };
+		45FA0211A1AD7ECBF625CAF2 /* SSHAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297919DE514A862D289D971 /* SSHAuth.swift */; };
+		4D57DDDABE406B0AAF49752C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C25F7BB6AE060956655C98D /* SessionManager.swift */; };
+		6E3EB7D873375BF677305BC6 /* IdentityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3478B6981521E6963D71C668 /* IdentityStore.swift */; };
+		6EAF1B3FFF85DF1060E82A26 /* TerminalScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66837C48485C687F361E4D /* TerminalScreen.swift */; };
+		71F0BDDCFC77F4A7F0BFB657 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = B301D9CB8C47CBD662A9A41C /* Shared.swift */; };
+		7747B50AAB9450F5AF3A05F4 /* BigInt in Frameworks */ = {isa = PBXBuildFile; productRef = 0A872A1714C55AE499A73F4E /* BigInt */; };
+		844CD0197DF71C8D571292BB /* HostStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AB2C367317B192E9405B2E /* HostStore.swift */; };
+		867E9B5178FEE205C7EE00F6 /* Citadel in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF163ACCED0295628D0CF7C /* Citadel */; };
+		948DCE8A4B12C3B4457D6B36 /* TerminalContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E991257CB808B6BFB590B6BD /* TerminalContainer.swift */; };
+		9912C8E7C8DF20AFA452CC5F /* RSASHA2Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C12241820EEF3A02A7083D /* RSASHA2Key.swift */; };
+		A372F2ED81A7310F669FE586 /* KnownHostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E099F3D844C4E8ED25ED8ED0 /* KnownHostsView.swift */; };
+		B13CF11ED133702D985242FC /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCC44353A31E4E0E990CCD /* Keychain.swift */; };
+		B3F88CDB06CB9FF51FA164BA /* CommandRunnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EBDF68B2D1F845EC22E94E /* CommandRunnerView.swift */; };
+		C111938BC6CC5773F2EB7724 /* ConnectFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858B2F92565105DC0C87740B /* ConnectFlowUITests.swift */; };
+		C7C392530AE2F62AF167AD9F /* SSHConfigParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012D47E00DF01CA552ACA758 /* SSHConfigParserTests.swift */; };
+		D1CE6FAF186D480917A23FE9 /* PortForwarder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D0ED20E73836B388196FE3 /* PortForwarder.swift */; };
+		DC011CC6F3D95A3E4640EE9E /* SSHConfigParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FEA67D3D3452D75CEBE71 /* SSHConfigParser.swift */; };
+		DD1DF28A2F7EA84D45D9C792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CB9E8B25F1DE80ED1F8620 /* Assets.xcassets */; };
+		E42808BAF0C8EB68AE770CF5 /* SSHWire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE30D4C5560DC850D88DE192 /* SSHWire.swift */; };
+		E4D5E5024F1925EEC55C3BB5 /* OpenSSHPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9FF9010A73EF5C4A5C37A /* OpenSSHPrivateKey.swift */; };
+		E6208C079743E5C9D7B827E1 /* PortForwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0954B866E1FEF4DE174CA6 /* PortForwardsView.swift */; };
+		EC9EEB7658711A0B4182AE05 /* HostEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFAF79353462F7975B3580 /* HostEditorView.swift */; };
+		EDCBF168191FBDADCE269802 /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA434E12D5F6C5FF0ADFD5A3 /* CredentialStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14223AF4FECB8FF9D01916DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ABC837052EF564D7D02A03F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4F4875C4F10A948FC2C2FAD;
+			remoteInfo = SSHMobile;
+		};
+		5855D0AC6255D62CE9239FA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ABC837052EF564D7D02A03F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4F4875C4F10A948FC2C2FAD;
+			remoteInfo = SSHMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		012D47E00DF01CA552ACA758 /* SSHConfigParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHConfigParserTests.swift; sourceTree = "<group>"; };
+		0A152FCD043DB4AD8D9350F7 /* JSONStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONStore.swift; sourceTree = "<group>"; };
+		10FBE60152141A203CF6FA85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		16D9C7F1BEDACCE899573EAA /* SessionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsView.swift; sourceTree = "<group>"; };
+		1FD1B7AA6F48038032164EBD /* swift-nio-ssh */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "swift-nio-ssh"; path = "Vendor/swift-nio-ssh"; sourceTree = SOURCE_ROOT; };
+		22C839539D466C8841CFCC88 /* SSHMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHMobileApp.swift; sourceTree = "<group>"; };
+		30DA3F97EABE5CDD388D0E8F /* HostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostListView.swift; sourceTree = "<group>"; };
+		319E4C8F426155772BA015E9 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		3478B6981521E6963D71C668 /* IdentityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityStore.swift; sourceTree = "<group>"; };
+		3C19964AB8A6213C9A08FFDC /* IdentitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentitiesView.swift; sourceTree = "<group>"; };
+		3E67A704D5A3489712DA14B7 /* KnownHostsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownHostsStore.swift; sourceTree = "<group>"; };
+		44E7CDFEC16E856566074256 /* TestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSupport.swift; sourceTree = "<group>"; };
+		4DAFAF79353462F7975B3580 /* HostEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostEditorView.swift; sourceTree = "<group>"; };
+		50AB2C367317B192E9405B2E /* HostStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostStore.swift; sourceTree = "<group>"; };
+		52E75B6D6EF6151F6F4D4EFE /* SSHMobile.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SSHMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E9FF9010A73EF5C4A5C37A /* OpenSSHPrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSSHPrivateKey.swift; sourceTree = "<group>"; };
+		61B9521B1ED8E439FC2889EE /* IntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationTests.swift; sourceTree = "<group>"; };
+		65436A720522EFEEA03BF1EA /* SSHMobileTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SSHMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		693EFA9A712721D7945F9AAE /* SSHSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHSession.swift; sourceTree = "<group>"; };
+		6C25F7BB6AE060956655C98D /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		7B0C47B85F086868EA8AC953 /* SFTPBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTPBrowserView.swift; sourceTree = "<group>"; };
+		858B2F92565105DC0C87740B /* ConnectFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectFlowUITests.swift; sourceTree = "<group>"; };
+		8AB0E29DECFD00C30993A0D9 /* Fixtures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fixtures; path = SSHMobileTests/Fixtures; sourceTree = SOURCE_ROOT; };
+		9F8FEA67D3D3452D75CEBE71 /* SSHConfigParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHConfigParser.swift; sourceTree = "<group>"; };
+		A0CB9E8B25F1DE80ED1F8620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3585D13CE03A0C856FE0DCA /* SSHMobileUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SSHMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC21C2ADD739F6E067F5ADC /* Fingerprint+CryptoKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fingerprint+CryptoKit.swift"; sourceTree = "<group>"; };
+		B297919DE514A862D289D971 /* SSHAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHAuth.swift; sourceTree = "<group>"; };
+		B301D9CB8C47CBD662A9A41C /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		C0869383A0214DDFBEFBEBE8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D063B216D7D59FC57329BF03 /* Citadel */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Citadel; path = Vendor/Citadel; sourceTree = SOURCE_ROOT; };
+		DD0954B866E1FEF4DE174CA6 /* PortForwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortForwardsView.swift; sourceTree = "<group>"; };
+		DD66837C48485C687F361E4D /* TerminalScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalScreen.swift; sourceTree = "<group>"; };
+		DEB9C5AEC33702CB5C79A0BD /* KnownHostsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownHostsTests.swift; sourceTree = "<group>"; };
+		E099F3D844C4E8ED25ED8ED0 /* KnownHostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownHostsView.swift; sourceTree = "<group>"; };
+		E1D0ED20E73836B388196FE3 /* PortForwarder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortForwarder.swift; sourceTree = "<group>"; };
+		E455DECE4EE1B041690FFB04 /* OpenSSHKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSSHKeyTests.swift; sourceTree = "<group>"; };
+		E8C12241820EEF3A02A7083D /* RSASHA2Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSASHA2Key.swift; sourceTree = "<group>"; };
+		E991257CB808B6BFB590B6BD /* TerminalContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalContainer.swift; sourceTree = "<group>"; };
+		EDCCC44353A31E4E0E990CCD /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		F3EBDF68B2D1F845EC22E94E /* CommandRunnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandRunnerView.swift; sourceTree = "<group>"; };
+		FA434E12D5F6C5FF0ADFD5A3 /* CredentialStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialStore.swift; sourceTree = "<group>"; };
+		FE30D4C5560DC850D88DE192 /* SSHWire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHWire.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6DCF0C99296FFA72FB217D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2EF5D760BBAD672B03F9C8 /* SwiftTerm in Frameworks */,
+				867E9B5178FEE205C7EE00F6 /* Citadel in Frameworks */,
+				7747B50AAB9450F5AF3A05F4 /* BigInt in Frameworks */,
+				182D877533A2AB5FE43CF259 /* NIOSSH in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06A6DDA6B0EEF482342C5A03 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D063B216D7D59FC57329BF03 /* Citadel */,
+				1FD1B7AA6F48038032164EBD /* swift-nio-ssh */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		466A4FCE3A326997EB570ECB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				319E4C8F426155772BA015E9 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		46DC3A9DAFD9109C29A31F65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3EBDF68B2D1F845EC22E94E /* CommandRunnerView.swift */,
+				4DAFAF79353462F7975B3580 /* HostEditorView.swift */,
+				30DA3F97EABE5CDD388D0E8F /* HostListView.swift */,
+				3C19964AB8A6213C9A08FFDC /* IdentitiesView.swift */,
+				E099F3D844C4E8ED25ED8ED0 /* KnownHostsView.swift */,
+				DD0954B866E1FEF4DE174CA6 /* PortForwardsView.swift */,
+				16D9C7F1BEDACCE899573EAA /* SessionsView.swift */,
+				C0869383A0214DDFBEFBEBE8 /* SettingsView.swift */,
+				7B0C47B85F086868EA8AC953 /* SFTPBrowserView.swift */,
+				B301D9CB8C47CBD662A9A41C /* Shared.swift */,
+				E991257CB808B6BFB590B6BD /* TerminalContainer.swift */,
+				DD66837C48485C687F361E4D /* TerminalScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		709C56C9A640CBE4B7268A16 /* SSHMobile */ = {
+			isa = PBXGroup;
+			children = (
+				8DE08315803AAA00B950E97C /* App */,
+				466A4FCE3A326997EB570ECB /* Models */,
+				FD9D23B134186CFCE6445E70 /* Resources */,
+				B30C18D2E7E3322FC67509DA /* Services */,
+				46DC3A9DAFD9109C29A31F65 /* Views */,
+			);
+			path = SSHMobile;
+			sourceTree = "<group>";
+		};
+		8A8D06785276A6A5BB473D50 = {
+			isa = PBXGroup;
+			children = (
+				06A6DDA6B0EEF482342C5A03 /* Packages */,
+				709C56C9A640CBE4B7268A16 /* SSHMobile */,
+				E7F8E01C55757B099D2C428D /* SSHMobileTests */,
+				AB03E8381A74824E2BB20CAF /* SSHMobileUITests */,
+				8B5282A528D7F1B1E18D0855 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B5282A528D7F1B1E18D0855 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52E75B6D6EF6151F6F4D4EFE /* SSHMobile.app */,
+				65436A720522EFEEA03BF1EA /* SSHMobileTests.xctest */,
+				A3585D13CE03A0C856FE0DCA /* SSHMobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DE08315803AAA00B950E97C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				22C839539D466C8841CFCC88 /* SSHMobileApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AB03E8381A74824E2BB20CAF /* SSHMobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				858B2F92565105DC0C87740B /* ConnectFlowUITests.swift */,
+			);
+			path = SSHMobileUITests;
+			sourceTree = "<group>";
+		};
+		B30C18D2E7E3322FC67509DA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA434E12D5F6C5FF0ADFD5A3 /* CredentialStore.swift */,
+				ABC21C2ADD739F6E067F5ADC /* Fingerprint+CryptoKit.swift */,
+				50AB2C367317B192E9405B2E /* HostStore.swift */,
+				3478B6981521E6963D71C668 /* IdentityStore.swift */,
+				0A152FCD043DB4AD8D9350F7 /* JSONStore.swift */,
+				EDCCC44353A31E4E0E990CCD /* Keychain.swift */,
+				3E67A704D5A3489712DA14B7 /* KnownHostsStore.swift */,
+				60E9FF9010A73EF5C4A5C37A /* OpenSSHPrivateKey.swift */,
+				E1D0ED20E73836B388196FE3 /* PortForwarder.swift */,
+				E8C12241820EEF3A02A7083D /* RSASHA2Key.swift */,
+				6C25F7BB6AE060956655C98D /* SessionManager.swift */,
+				B297919DE514A862D289D971 /* SSHAuth.swift */,
+				9F8FEA67D3D3452D75CEBE71 /* SSHConfigParser.swift */,
+				693EFA9A712721D7945F9AAE /* SSHSession.swift */,
+				FE30D4C5560DC850D88DE192 /* SSHWire.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E7F8E01C55757B099D2C428D /* SSHMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				8AB0E29DECFD00C30993A0D9 /* Fixtures */,
+				61B9521B1ED8E439FC2889EE /* IntegrationTests.swift */,
+				DEB9C5AEC33702CB5C79A0BD /* KnownHostsTests.swift */,
+				E455DECE4EE1B041690FFB04 /* OpenSSHKeyTests.swift */,
+				012D47E00DF01CA552ACA758 /* SSHConfigParserTests.swift */,
+				44E7CDFEC16E856566074256 /* TestSupport.swift */,
+			);
+			path = SSHMobileTests;
+			sourceTree = "<group>";
+		};
+		FD9D23B134186CFCE6445E70 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A0CB9E8B25F1DE80ED1F8620 /* Assets.xcassets */,
+				10FBE60152141A203CF6FA85 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66E385D52477F8A21722D51A /* SSHMobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16914434C004237102A23570 /* Build configuration list for PBXNativeTarget "SSHMobileUITests" */;
+			buildPhases = (
+				96978FD0CA8664735B889A59 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6310C1985376322A1BCB7A02 /* PBXTargetDependency */,
+			);
+			name = SSHMobileUITests;
+			packageProductDependencies = (
+			);
+			productName = SSHMobileUITests;
+			productReference = A3585D13CE03A0C856FE0DCA /* SSHMobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9655CE2B754AB3BA43D2D7BC /* SSHMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F7718000310E2BFCB339E25 /* Build configuration list for PBXNativeTarget "SSHMobileTests" */;
+			buildPhases = (
+				CF5C2FB2022F4493C52DEDB7 /* Sources */,
+				9A4AC8C7ACCAD13608E3CFA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				493FE8DDC44E8375321DD7BF /* PBXTargetDependency */,
+			);
+			name = SSHMobileTests;
+			packageProductDependencies = (
+			);
+			productName = SSHMobileTests;
+			productReference = 65436A720522EFEEA03BF1EA /* SSHMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A4F4875C4F10A948FC2C2FAD /* SSHMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C154C62E25868FC3B41484A4 /* Build configuration list for PBXNativeTarget "SSHMobile" */;
+			buildPhases = (
+				83D1B5C3E0A9D336BB117A54 /* Sources */,
+				7371A055985DC16BF2E2090C /* Resources */,
+				C6DCF0C99296FFA72FB217D9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSHMobile;
+			packageProductDependencies = (
+				22AA1C0116086EF45A7AE40A /* SwiftTerm */,
+				9FF163ACCED0295628D0CF7C /* Citadel */,
+				0A872A1714C55AE499A73F4E /* BigInt */,
+				53757370EA33814910DC133B /* NIOSSH */,
+			);
+			productName = SSHMobile;
+			productReference = 52E75B6D6EF6151F6F4D4EFE /* SSHMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6ABC837052EF564D7D02A03F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					66E385D52477F8A21722D51A = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = A4F4875C4F10A948FC2C2FAD;
+					};
+					9655CE2B754AB3BA43D2D7BC = {
+						ProvisioningStyle = Automatic;
+					};
+					A4F4875C4F10A948FC2C2FAD = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E7A9B3B3713A29F135F01559 /* Build configuration list for PBXProject "SSHMobile" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8A8D06785276A6A5BB473D50;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F5A997C75ECBCA0A58AD54DA /* XCRemoteSwiftPackageReference "BigInt" */,
+				1CEAC3F42BDC05F7B92F0E2E /* XCRemoteSwiftPackageReference "SwiftTerm" */,
+				87FC92C5C277DC63C5DC2187 /* XCLocalSwiftPackageReference "Vendor/Citadel" */,
+				9178E0FE1F1046CAC5D532A2 /* XCLocalSwiftPackageReference "Vendor/swift-nio-ssh" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8B5282A528D7F1B1E18D0855 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4F4875C4F10A948FC2C2FAD /* SSHMobile */,
+				9655CE2B754AB3BA43D2D7BC /* SSHMobileTests */,
+				66E385D52477F8A21722D51A /* SSHMobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7371A055985DC16BF2E2090C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD1DF28A2F7EA84D45D9C792 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4AC8C7ACCAD13608E3CFA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139590BAD0DAF39F764E1AF6 /* Fixtures in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83D1B5C3E0A9D336BB117A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F88CDB06CB9FF51FA164BA /* CommandRunnerView.swift in Sources */,
+				EDCBF168191FBDADCE269802 /* CredentialStore.swift in Sources */,
+				36EB2A7D08E4EBB19D6E3707 /* Fingerprint+CryptoKit.swift in Sources */,
+				EC9EEB7658711A0B4182AE05 /* HostEditorView.swift in Sources */,
+				2551204A48EE94EE3D18A953 /* HostListView.swift in Sources */,
+				844CD0197DF71C8D571292BB /* HostStore.swift in Sources */,
+				0E04C8533A9995203535180C /* IdentitiesView.swift in Sources */,
+				6E3EB7D873375BF677305BC6 /* IdentityStore.swift in Sources */,
+				09B111F7C9CD21F01238E5E3 /* JSONStore.swift in Sources */,
+				B13CF11ED133702D985242FC /* Keychain.swift in Sources */,
+				1E7D816F4EEAE817B181924F /* KnownHostsStore.swift in Sources */,
+				A372F2ED81A7310F669FE586 /* KnownHostsView.swift in Sources */,
+				2A07C47D8E4B81C036B59B44 /* Models.swift in Sources */,
+				E4D5E5024F1925EEC55C3BB5 /* OpenSSHPrivateKey.swift in Sources */,
+				D1CE6FAF186D480917A23FE9 /* PortForwarder.swift in Sources */,
+				E6208C079743E5C9D7B827E1 /* PortForwardsView.swift in Sources */,
+				9912C8E7C8DF20AFA452CC5F /* RSASHA2Key.swift in Sources */,
+				301702F26534629519BB1499 /* SFTPBrowserView.swift in Sources */,
+				45FA0211A1AD7ECBF625CAF2 /* SSHAuth.swift in Sources */,
+				DC011CC6F3D95A3E4640EE9E /* SSHConfigParser.swift in Sources */,
+				3B69A3D0E7A2C12249A20D1D /* SSHMobileApp.swift in Sources */,
+				205BA3B7253F448770569A16 /* SSHSession.swift in Sources */,
+				E42808BAF0C8EB68AE770CF5 /* SSHWire.swift in Sources */,
+				4D57DDDABE406B0AAF49752C /* SessionManager.swift in Sources */,
+				1B20023761F8F82449C1274B /* SessionsView.swift in Sources */,
+				29B74733C8818E274D001251 /* SettingsView.swift in Sources */,
+				71F0BDDCFC77F4A7F0BFB657 /* Shared.swift in Sources */,
+				948DCE8A4B12C3B4457D6B36 /* TerminalContainer.swift in Sources */,
+				6EAF1B3FFF85DF1060E82A26 /* TerminalScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96978FD0CA8664735B889A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C111938BC6CC5773F2EB7724 /* ConnectFlowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF5C2FB2022F4493C52DEDB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABAB6A67780E2470A997917 /* IntegrationTests.swift in Sources */,
+				2876121024F38D47EE308B04 /* KnownHostsTests.swift in Sources */,
+				42D4F4B3023A6AC8A722B436 /* OpenSSHKeyTests.swift in Sources */,
+				C7C392530AE2F62AF167AD9F /* SSHConfigParserTests.swift in Sources */,
+				008221BF83B4B22E48F98FFA /* TestSupport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		493FE8DDC44E8375321DD7BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4F4875C4F10A948FC2C2FAD /* SSHMobile */;
+			targetProxy = 14223AF4FECB8FF9D01916DB /* PBXContainerItemProxy */;
+		};
+		6310C1985376322A1BCB7A02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4F4875C4F10A948FC2C2FAD /* SSHMobile */;
+			targetProxy = 5855D0AC6255D62CE9239FA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01BA4AE19EBB2F06194157B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SSHMobile/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sshmobile.app;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8CD69A95FD4F3C86A60C5EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SSHMobile/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sshmobile.app;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9182E490DB9FD29AEDE7915F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.10;
+			};
+			name = Release;
+		};
+		A13E71B587E0FA3030CEC5A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sshmobile.SSHMobileTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSHMobile.app/SSHMobile";
+			};
+			name = Debug;
+		};
+		A66691B6261145D5F3ADB546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.10;
+			};
+			name = Debug;
+		};
+		ADE67741C21AAC9D761CBDE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sshmobile.SSHMobileTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSHMobile.app/SSHMobile";
+			};
+			name = Release;
+		};
+		BE0F37432A4162F08BEC60E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sshmobile.SSHMobileUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SSHMobile;
+			};
+			name = Debug;
+		};
+		E19FC11F9B68FE3FF4AA19AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sshmobile.SSHMobileUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SSHMobile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16914434C004237102A23570 /* Build configuration list for PBXNativeTarget "SSHMobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE0F37432A4162F08BEC60E8 /* Debug */,
+				E19FC11F9B68FE3FF4AA19AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3F7718000310E2BFCB339E25 /* Build configuration list for PBXNativeTarget "SSHMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13E71B587E0FA3030CEC5A6 /* Debug */,
+				ADE67741C21AAC9D761CBDE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C154C62E25868FC3B41484A4 /* Build configuration list for PBXNativeTarget "SSHMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CD69A95FD4F3C86A60C5EAC /* Debug */,
+				01BA4AE19EBB2F06194157B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E7A9B3B3713A29F135F01559 /* Build configuration list for PBXProject "SSHMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A66691B6261145D5F3ADB546 /* Debug */,
+				9182E490DB9FD29AEDE7915F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		87FC92C5C277DC63C5DC2187 /* XCLocalSwiftPackageReference "Vendor/Citadel" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/Citadel;
+		};
+		9178E0FE1F1046CAC5D532A2 /* XCLocalSwiftPackageReference "Vendor/swift-nio-ssh" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "Vendor/swift-nio-ssh";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1CEAC3F42BDC05F7B92F0E2E /* XCRemoteSwiftPackageReference "SwiftTerm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/migueldeicaza/SwiftTerm";
+			requirement = {
+				kind = exactVersion;
+				version = 1.11.2;
+			};
+		};
+		F5A997C75ECBCA0A58AD54DA /* XCRemoteSwiftPackageReference "BigInt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/attaswift/BigInt";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A872A1714C55AE499A73F4E /* BigInt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5A997C75ECBCA0A58AD54DA /* XCRemoteSwiftPackageReference "BigInt" */;
+			productName = BigInt;
+		};
+		22AA1C0116086EF45A7AE40A /* SwiftTerm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CEAC3F42BDC05F7B92F0E2E /* XCRemoteSwiftPackageReference "SwiftTerm" */;
+			productName = SwiftTerm;
+		};
+		53757370EA33814910DC133B /* NIOSSH */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NIOSSH;
+		};
+		9FF163ACCED0295628D0CF7C /* Citadel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Citadel;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6ABC837052EF564D7D02A03F /* Project object */;
+}

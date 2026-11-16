@@ -1,0 +1,78 @@
+name: SSHMobile
+options:
+  bundleIdPrefix: dev.sshmobile
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "27.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+settings:
+  base:
+    SWIFT_VERSION: "5.10"
+    SWIFT_STRICT_CONCURRENCY: minimal
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    CODE_SIGN_STYLE: Automatic
+    CODE_SIGN_IDENTITY: "-"
+    GENERATE_INFOPLIST_FILE: YES
+packages:
+  SwiftTerm:
+    url: https://github.com/migueldeicaza/SwiftTerm
+    exactVersion: "1.11.2"
+  Citadel:
+    path: Vendor/Citadel
+  BigInt:
+    url: https://github.com/attaswift/BigInt
+    from: "5.7.0"
+  swift-nio-ssh:
+    path: Vendor/swift-nio-ssh
+targets:
+  SSHMobile:
+    type: application
+    platform: iOS
+    sources:
+      - path: SSHMobile
+    dependencies:
+      - package: SwiftTerm
+      - package: Citadel
+      - package: BigInt
+      - package: swift-nio-ssh
+        product: NIOSSH
+    info:
+      path: SSHMobile/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: SSH Mobile
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: true
+        UIBackgroundModes: [audio]
+        NSLocalNetworkUsageDescription: SSH Mobile connects to servers on your local network when you ask it to.
+        NSFaceIDUsageDescription: Unlock private keys stored in the Keychain.
+        UIFileSharingEnabled: true
+        LSSupportsOpeningDocumentsInPlace: true
+        ITSAppUsesNonExemptEncryption: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.sshmobile.app
+        TARGETED_DEVICE_FAMILY: "1,2"
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        SWIFT_OBJC_BRIDGING_HEADER: ""
+  SSHMobileTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: SSHMobileTests
+        excludes: ["Fixtures/**"]
+      - path: SSHMobileTests/Fixtures
+        buildPhase: resources
+        type: folder
+    dependencies:
+      - target: SSHMobile
+  SSHMobileUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: SSHMobileUITests
+    dependencies:
+      - target: SSHMobile

@@ -1,0 +1,6 @@
+384 SHA256:wuY38WKSAZpsms6KwFZ+g4mBzeKMmkqxkemKUXVSgeQ test-ecdsa-enc (ECDSA)
+256 SHA256:jL6/OTND/wcWvu1v/TIbcsD5X1c17skcZwsV6VKKhjY test-ecdsa (ECDSA)
+256 SHA256:uoCDn/bZ01Bz86cg5FwYlPykLU6K9rjJrHBiyr5WLvs test-ed25519-enc (ED25519)
+256 SHA256:izq74qJSRC2wG3UqxZ4/PNUBVu9+tcrONp7WJDnVkHc test-ed25519 (ED25519)
+2048 SHA256:Ikrd47iSgLDjH9Owrytfq/OOohtJRh/l/7JanZ1Qnzw test-rsa-enc (RSA)
+2048 SHA256:Z+G8RZojnDqiH/AV9ki7vvqOTwuXAQouUyEf5u48wwY test-rsa (RSA)
